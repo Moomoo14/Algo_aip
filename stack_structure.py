@@ -21,7 +21,7 @@ def pop():
 def pop_max(data):
     if type(data) not in [list, dict]:
         return f"a list type is required, your input has a  {type(data)}, with  {data}"
-    return data.pop(max(data)) if type(data) == "list" else data.pop(max(data.keys()))
+    return data.pop(max(data)) if type(data) == list else data.pop(max(data.keys()))
         
 
 # def dequeue_all():
